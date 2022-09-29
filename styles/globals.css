@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .Navlink {
+    @apply text-xs md:text-sm font-medium text-green-600 hover:text-green-700 hover:scale-110 transition-all ease-in-out duration-100 cursor-pointer;
+  }
+
+  .ChatAction {
+    @apply text-xs md:text-sm font-medium bg-gray-100 px-4 py-2 shadow-sm cursor-pointer rounded-xl hover:shadow-lg;
+  }
+
+  .AuthInput {
+    @apply flex-grow bg-transparent border border-green-200 px-3 py-2 outline-none rounded-lg placeholder:text-gray-300;
+  }
+
+  .InputContainer {
+    @apply flex flex-col mb-6;
+  }
+
+  .InputContainer > p {
+    @apply font-medium text-sm text-gray-100;
+  }
+
+  .SettingSec {
+    @apply w-full space-y-3;
+  }
+
+  .SettingSecContent {
+    @apply w-full p-4 space-y-2 bg-white rounded-lg border border-gray-400;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+p {
+  font-family: "Sora", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 12px;
+}
+
+/* .hide-scrollBar::-webkit-scrollbar {
+  display: none;
+} */

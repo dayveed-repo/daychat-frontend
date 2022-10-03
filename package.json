@@ -30,5 +30,5 @@
     "tailwindcss": "^3.1.2",
     "typescript": "4.7.2"
   },
-  "proxy": "https://daychat.herokuapp.com"
+  "proxy": "https://daychat.herokuapp.com/"
 }

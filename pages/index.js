@@ -18,7 +18,9 @@ import AddNewChat from "../components/AddNewChat";
 import LoadingScreen from "../components/LoadingScreen";
 import instance from "../axiosConfig";
 
-const socket = io("ws://localhost:4001", { transports: ["websocket"] });
+const socket = io("ws://daychat.herokuapp.com", {
+  transports: ["websocket"],
+});
 
 const Home = () => {
   const router = useRouter();
